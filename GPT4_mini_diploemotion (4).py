@@ -1,23 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 import pandas as pd
 import openai
 import time
 
-
-# In[3]:
-
-
 # Initialize OpenAI API key
 openai.api_key = "YOUR-API-KEY"
-
-
-# In[10]:
-
 
 # Function to process a batch of press releases using OpenAI API
 def label_press_releases_batch(batch):
@@ -85,9 +71,6 @@ Process each press release individually and return a list of structured outputs.
             print(f"Error: {e}")
             results.append(None)
     return results
-
-
-# In[12]:
 
 
 # Load dataset from Excel file
