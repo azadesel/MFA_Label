@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
 
 
 import pandas as pd
@@ -9,22 +5,12 @@ import openai
 import time
 
 
-# In[2]:
-
-
 # Set your OpenAI API key
 openai.api_key = "YOUR-API-KEY"
 
 
-# In[5]:
-
-
 file_path = "FILE-PATH"
 unique_tr = pd.read_excel(file_path)
-
-
-# In[6]:
-
 
 # Assuming unique_tr is a pandas DataFrame and 'body_text' contains the text to translate
 def translate_text(text):
@@ -42,10 +28,6 @@ def translate_text(text):
     except Exception as e:
         print(f"Translation failed for text: {text[:50]}... with error: {e}")
         return None
-
-
-# In[7]:
-
 
 # Function to translate in batches
 def batch_translate(df, batch_size=100):
@@ -67,23 +49,13 @@ def batch_translate(df, batch_size=100):
     return df
 
 
-# In[9]:
-
 
 # Assuming unique_tr is the dataframe containing Turkish press releases
 batch_size = 50  # Process 50 press releases per batch
 translated_df = batch_translate(unique_tr, batch_size)
 
 
-# In[10]:
-
-
 # Save the translated dataset
 translated_df.to_excel("OUTPU-FILE-PATH", index=False)
 
-
-# In[13]:
-
-
-print(unique_tr)
 
