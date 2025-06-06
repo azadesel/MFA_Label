@@ -13,7 +13,7 @@ import time
 
 
 # Initialize OpenAI API key
-openai.api_key = "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"
+openai.api_key = "YOUR-API-KEY"
 
 
 # In[10]:
