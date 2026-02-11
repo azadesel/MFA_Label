@@ -5,7 +5,7 @@ This Python script utilizes the OpenAI API to analyze press releases from the Tu
 
 ## Features
 
-* **Emotion Detection**: Identifies emotions (Happiness, Sadness, Fear, Sympathy, Frustration, Hope, Anger, None) conveyed in press releases.
+* **Emotion Detection**: Identifies emotions (Happiness, Sadness, Fear, Sympathy, Frustration, Hope, Anger, Low Emotional Signal) conveyed in press releases.
 * **Event Categorization**: Assigns a main event category to each press release.
 * **Actor Identification**: Extracts the primary actor involved in the event described.
 * **Keyword Extraction**: Identifies up to five key words or phrases relevant to the press release content.
