@@ -42,14 +42,14 @@ pip install pandas openai
     Update the `input_file` variable with the path to your Excel file:
 
     ```python
-    input_file = "/Users/azadesel/Desktop/mfa_archive/mfa_2025_clean_woanalysis.xlsx"
+    input_file = "/Users/***.xlsx"
     ```
 
 3.  **Output Excel File**:
     Specify the desired path and filename for the output Excel file where the analyzed data will be saved:
 
     ```python
-    output_file = "/Users/azadesel/Desktop/mfa_archive/mfa_en/processed_press_releases_2025.xlsx"
+    output_file = "/Users/***.xlsx"
     ```
 
 ## Usage
